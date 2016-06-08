@@ -1,0 +1,148 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   doft.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/06/08 21:38:36 by tbouder           #+#    #+#             */
+/*   Updated: 2016/06/08 23:31:06 by tbouder          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+** Header
+*/
+.st_head
+{
+	position: absolute;
+	left: 233px;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	width: 1420px;
+	height: 137px;
+	margin: 15px auto;
+}
+.st_img_dot42
+{
+	position: absolute;
+	top: 10px;
+	left: 1%;
+}
+.st_img_glass
+{
+	position: absolute;
+	right: 27px;
+	top: 10px;
+}
+.st_img_reload
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.st_img_close
+{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+/*
+** Dashboard (grid)
+*/
+.grid
+{
+	margin-left: 240px;
+	padding-top: 158px;
+	display: flex;
+	flex-direction: row;
+}
+.grid_std
+{
+	position: absolute;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	margin: 15px auto;
+}
+.grid_side_left
+{
+	padding: 1px;
+	padding-bottom: 3;
+	margin-left: 20px;
+	width: 138px;
+	height: 420px;
+}
+.grid_side_right
+{
+	padding: 1px;
+	padding-bottom: 3;
+	margin-left: 1235px;
+	width: 138px;
+	height: 420px;
+}
+.grid_center
+{
+	padding: 12px;
+	margin-left: 190px;
+	width: 993px;
+	z-index: 1;
+}
+
+/*
+** Left & right
+*/
+.st_img_arrow
+{
+	height: 70px;
+	margin-left: 30.5px;
+	margin-top: 14px;
+}
+.st_img_eye
+{
+	border: solid 5px red;
+	border-radius: 5px;
+	height: 65px;
+	margin-left: 26px;
+	margin-top: 5px;
+}
+.st_imgs_hand
+{
+	height: 65px;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+.st_imgs_tools
+{
+	height: 70px;
+	margin-left: 30.5px;
+	margin-top: 5px;
+}
+.st_imgs_chat
+{
+	height: 70px;
+	margin-left: 30.5px;
+	margin-top: 10px;
+}
+.st_img_book
+{
+	height: 97px;
+	margin-left: 30.5px;
+	margin-top: 14px;
+}
+.st_img_towel
+{
+	width: 70px;
+	margin-left: 30.5px;
+	margin-top: 14px;
+}
+.st_brik
+{
+	width: 120px;
+	height: 70px;
+	margin-left: 9px;
+	margin-top: 5px;
+	background-image: url("resources/brick.jpg");
+}

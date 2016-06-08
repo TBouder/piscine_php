@@ -4,48 +4,89 @@
                                                       +:+ +:+         +:+
      By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+
                                                   +#+#+#+#+#+   +#+
-     Created: 2016/06/07 18:40:20 by tbouder           #+#    #+#
-     Updated: 2016/06/07 21:56:42 by tbouder          ###   ########.fr
+     Created: 2016/06/08 21:38:31 by tbouder           #+#    #+#
+     Updated: 2016/06/09 00:19:40 by tbouder          ###   ########.fr
 -->
 
 <html>
 	<head>
 		<title>Day of the 42</title>
+		<link rel="stylesheet" type="text/css" href="doft.css" />
 		<style>
 			body {background-color: #505050;}
 			.st_center {text-align: center;}
 			.st_right {text-align: right;}
 
-			.st_head {background-color: #909090; border-radius: 10px; box-shadow: 7px 10px 10px black; width: 75%; height: 137px; margin: 15px auto;}
-			.st_img_dot42 {position: relative; top: -20%; left: 1%;}
-			.st_img_glass {position: relative; left: 49%; top: 7%;}
-			.st_img_reload {position: relative; left: 68.5%; bottom: 85%;}
-			.st_img_close {position: relative; left: 48.5%; bottom: 12%;}
-
-			.st_left {background-color: #909090; border-radius: 10px; box-shadow: 7px 10px 10px black; width: 7.5%; height: 46%; margin: 15px auto;}
-			.st_right {background-color: #909090; border-radius: 10px; box-shadow: 7px 10px 10px black; width: 7.5%; height: 46%; margin: 15px auto;}
-
+			.st_dialogue
+			{
+				position: absolute;
+				height: 170px;
+				width: 520px;
+				border-radius: 10px;
+				box-shadow: 10px 10px 10px black;
+				background-color: #88FF89;
+				margin-top: 519px;
+				margin-left: 185px;
+				z-index: 2;
+			}
+			.st_txt_00
+			{
+				margin-top: 20px;
+				margin-left: 12px;
+				font-size: 16px;
+				font-family: Verdana;
+				line-height: 20px;
+			}
+			.st_txt_01
+			{
+				font-size: 33px;
+			    font-family: Didot;
+			}
+			.st_txt_02
+			{
+				font-style: italic;
+				line-height: 20px;
+			}
+			.st_box
+			{
+				margin-top: 3px;
+				margin-left: 14px;
+			}
+			.ordi
+			{
+				text-shadow: 5px 5px 4px #CF5C08;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="st_head">
-			<img src="resources/day_of_the_42.png" alt="dot42" height="107px" class="st_img_dot42"/>
+			<img src="resources/day_of_the_42.png" alt="dot42" height="107px" class="st_img_dot42" />
 			<img src="resources/reload.png" alt="reload" height="20px" class="st_img_reload" />
 			<img src="resources/loupe.png" alt="loupe" class="st_img_glass" />
 			<img src="resources/close.gif" alt="close" class="st_img_close" />
 		</div>
-		<div>
-			<div class="st_left"></div>
-			<div class="st_right"></div>
+		<div class="grid">
+			<div class="grid_std grid_side_left">
+				<img src="resources/arrow.png" alt="arrow" class="st_img_arrow" />
+				<img src="resources/main.png" alt="main" class="st_imgs_hand" />
+				<img src="resources/oeil.png" alt="oeil" class="st_img_eye" />
+				<img src="resources/outil.png" alt="outil" class="st_imgs_tools" />
+				<img src="resources/chat-icon.png" alt="char" class="st_imgs_chat" />
+			</div>
+			<div class="grid_std grid_center"><img src="resources/cluster.jpg" alt="cluster" width="100%" /></div>
+			<div class="grid_std grid_side_right">
+				<img src="resources/book.png" alt="book" class="st_img_book" />
+				<img src="resources/towel.png" alt="towel" class="st_img_towel" />
+				<div class="st_brik"></div>
+			</div>
 		</div>
-		<!-- <img src="resources/arrow.png" />
-		<img src="resources/book.png" />
-		<img src="resources/brick.jpg" />
-		<img src="resources/chat-icon.png" />
-		<img src="resources/cluster.jpg" />
-		<img src="resources/main.png" />
-		<img src="resources/oeil.png" />
-		<img src="resources/outil.png" />
-		<img src="resources/towel.png" /> -->
+		<div class="st_dialogue">
+			<div class="st_txt_00">
+				Vous <span class="st_txt_01">entrez</span> alors dans une grande piece remplie d'<span class="ordi">ordinateurs...</span><br />
+				<span class="st_txt_02">- Bonjour, vous &#234;tes nouveau ici ?</span>
+			</div>
+			<input type="text" size="59" class="st_box"></span><input type="submit" value="repondre"></font></p>
+
+		</div>
 	</body>
 </html>
