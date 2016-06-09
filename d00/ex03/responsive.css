@@ -1,0 +1,164 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   responsive.css                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/06/09 12:31:39 by tbouder           #+#    #+#             */
+/*   Updated: 2016/06/09 16:31:20 by tbouder          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+** General, title and grid
+*/
+body
+{
+	background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/mochaGrunge.png");
+}
+.st_img
+{
+	position: absolute;
+	left: 40%;
+	top: 5%;
+	width: 15vw;
+}
+.st_title
+{
+	color:white;
+	margin-left: 50%;
+}
+.st_table
+{
+	border: 1px;
+	width: 90vw;
+	height: 70vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7%;
+}
+td
+{
+	height: 5vh;
+	width: 2vw;
+	position: relative;
+	border: 1px solid;
+}
+
+/*
+** Cases
+*/
+.st_none
+{
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+}
+.st_td_green
+{
+	background-color: #4CAF50;
+	position: relative;
+}
+.st_td_lgreen
+{
+	background-color: #8BC34A;
+	position: relative;
+}
+.st_td_orange
+{
+	background-color: #FF9800;
+	position: relative;
+}
+.st_td_brown
+{
+	background-color: #795548;
+	position: relative;
+}
+.st_td_pink
+{
+	background-color: #F06292;
+	position: relative;
+}
+.st_td_blue
+{
+	background-color: #1976D2;
+	position: relative;
+}
+.st_td_lblue
+{
+	background-color: #29B6F6;
+	position: relative;
+}
+.st_td_purple
+{
+	background-color: #673AB7;
+	position: relative;
+}
+.st_td_red
+{
+	background-color: #f44336;
+	position: relative;
+}
+.st_td_grey
+{
+	background-color: #607D8B;
+	position: relative;
+}
+.st_td_amber
+{
+	background-color: #FFC107;
+	position: relative;
+}
+
+/*
+** Texts
+*/
+.st_sym_one
+{
+	position: absolute;
+	font-size: calc(0.75vw + 0.75vh + 0.375vmin);
+	left: 35%;
+	top: 25%;
+	display: inline-block;
+}
+.st_sym_two
+{
+	position: absolute;
+	font-size: calc(0.75vw + 0.75vh + 0.375vmin);
+	overflow: hidden;
+	left: 30%;
+	top: 25%;
+	display: inline-block;
+}
+.st_sym_three
+{
+	position: absolute;
+	font-size: calc(0.75vw + 0.75vh + 0.375vmin);
+	left: 20%;
+	top: 25%;
+	display: inline-block;
+}
+.st_sym_ext
+{
+	position: absolute;
+	font-size: calc(0.75vw + 0.75vh + 0.375vmin);
+	left: 35%;
+	top: 25%;
+	display: inline-block;
+}
+.st_num
+{
+	position: absolute;
+	font-size: 0.7vw;
+	float: left;
+	bottom: 2%;
+	left: 2%;
+}
+.st_weigth
+{
+	position: absolute;
+	font-size: 0.7vw;
+	float: right;
+	top: 2%;
+	right: 2%;
+}
