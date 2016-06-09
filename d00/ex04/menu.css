@@ -1,0 +1,84 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   menu.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/06/09 16:52:50 by tbouder           #+#    #+#             */
+/*   Updated: 2016/06/09 18:16:25 by tbouder          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+** General
+*/
+body
+{
+	background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/mochaGrunge.png");
+}
+
+.st_head
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/stardust.png");
+	text-align: center;
+}
+
+/*
+** Menu
+*/
+.st_menu
+{
+	display: inline-block;
+	padding-right: 10%;
+	text-align: left;
+}
+.st_list
+{
+	padding: 0;
+	position: absolute;
+	display: none;
+}
+.st_elem
+{
+	border-radius: 10px;
+	margin-top: 30px;
+	background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/stardust.png");
+	width: 10vw;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.st_menu:hover .st_list
+{
+   display: inline;
+}
+
+/*
+** Texts and imgs
+*/
+.st_title
+{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0;
+}
+.st_txt
+{
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 190%;
+}
+.st_img
+{
+	margin-top: 15vw;
+	margin-left: 38vw;
+	height: 20vw;
+}
