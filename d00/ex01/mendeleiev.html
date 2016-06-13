@@ -4,8 +4,8 @@
                                                       +:+ +:+         +:+
      By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+
                                                   +#+#+#+#+#+   +#+
-     Created: 2016/06/07 16:07:18 by tbouder           #+#    #+#
-     Updated: 2016/06/07 18:35:30 by tbouder          ###   ########.fr
+     Created: 2016/06/13 09:05:40 by tbouder           #+#    #+#
+     Updated: 2016/06/13 14:33:33 by tbouder          ###   ########.fr
 -->
 
 <html>
@@ -15,25 +15,22 @@
 			.st_title {color:white; margin-left: 50%;}
 			.st_table {border: 1px; width: 1520px; height:600px; margin-left: auto; margin-right: auto; margin-top: 7%;}
 			.st_none {background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0);}
-			.st_sym_one {position: absolute; top: 23%; left: 35%; font-size: 30px;}
-			.st_sym_two {position: absolute; top: 23%; left: 30%; font-size: 30px;}
-			.st_sym_three {position: absolute; top: 23%; left: 20%; font-size: 30px;}
-			.st_sym_ext {position: absolute; top: 23%; left: 5%; font-size: 30px;}
+			.st_symb {position: relative; font-size: 30px;}
 			.st_num {position: absolute; bottom: 1px; left: 2px; font-size: 12px;}
 			.st_weigth {position: absolute; top: 1px; right: 2px; font-size: 12px;}
 			body {background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/mochaGrunge.png");}
 			td {height:60; width:80; position: relative; border: 1px solid;}
-			.st_td_green {background-color: #4CAF50;}
-			.st_td_lgreen {background-color: #8BC34A;}
-			.st_td_orange {background-color: #FF9800;}
-			.st_td_brown {background-color: #795548;}
-			.st_td_pink {background-color: #F06292;}
-			.st_td_blue {background-color: #1976D2;}
-			.st_td_lblue {background-color: #29B6F6;}
-			.st_td_purple {background-color: #673AB7;}
-			.st_td_red {background-color: #f44336;}
-			.st_td_grey {background-color: #607D8B;}
-			.st_td_amber {background-color: #FFC107;}
+			.st_td_green {background-color: #4CAF50; text-align: center;}
+			.st_td_lgreen {background-color: #8BC34A; text-align: center;}
+			.st_td_orange {background-color: #FF9800; text-align: center;}
+			.st_td_brown {background-color: #795548; text-align: center;}
+			.st_td_pink {background-color: #F06292; text-align: center;}
+			.st_td_blue {background-color: #1976D2; text-align: center;}
+			.st_td_lblue {background-color: #29B6F6; text-align: center;}
+			.st_td_purple {background-color: #673AB7; text-align: center;}
+			.st_td_red {background-color: #f44336; text-align: center;}
+			.st_td_grey {background-color: #607D8B; text-align: center;}
+			.st_td_amber {background-color: #FFC107; text-align: center;}
 			.st_img {position: absolute; left: 40%; top: 5%;}
 		</style>
 	</head>
@@ -42,7 +39,7 @@
 		<img src="http://www.pngall.com/wp-content/uploads/2016/03/Meme-Transparent-PNG.png" width=250px class="st_img" />
 		<table class="st_table">
 			<tr>
-				<td class="st_td_green"><div class="st_num">1</div><div class="st_sym_one">H</div><div class="st_weigth">1.0079</div></td>
+				<td class="st_td_green"><div class="st_num">1</div><div class="st_symb">H</div><div class="st_weigth">1.0079</div></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
@@ -59,12 +56,12 @@
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
-				<td class="st_td_purple"><div class="st_num">2</div><div class="st_sym_two">He</div><div class="st_weigth">4.0026</div></td>
+				<td class="st_td_purple"><div class="st_num">2</div><div class="st_symb">He</div><div class="st_weigth">4.0026</div></td>
 			</tr>
 
 			<tr>
-				<td class="st_td_orange"><div class="st_num">3</div><div class="st_sym_two">Li</div><div class="st_weigth">6.941</div></td>
-				<td class="st_td_brown"><div class="st_num">4</div><div class="st_sym_two">Be</div><div class="st_weigth">9.0122</div></td>
+				<td class="st_td_orange"><div class="st_num">3</div><div class="st_symb">Li</div><div class="st_weigth">6.941</div></td>
+				<td class="st_td_brown"><div class="st_num">4</div><div class="st_symb">Be</div><div class="st_weigth">9.0122</div></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
@@ -75,17 +72,17 @@
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
-				<td class="st_td_lblue"><div class="st_num">5</div><div class="st_sym_one">B</div><div class="st_weigth">10.811</div></td>
-				<td class="st_td_green"><div class="st_num">6</div><div class="st_sym_one">C</div><div class="st_weigth">12.011</div></td>
-				<td class="st_td_green"><div class="st_num">7</div><div class="st_sym_one">N</div><div class="st_weigth">14.007</div></td>
-				<td class="st_td_green"><div class="st_num">8</div><div class="st_sym_one">O</div><div class="st_weigth">15.999</div></td>
-				<td class="st_td_lgreen"><div class="st_num">9</div><div class="st_sym_one">F</div><div class="st_weigth">18.998</div></td>
-				<td class="st_td_purple"><div class="st_num">10</div><div class="st_sym_two">Ne</div><div class="st_weigth">20.180</div></td>
+				<td class="st_td_lblue"><div class="st_num">5</div><div class="st_symb">B</div><div class="st_weigth">10.811</div></td>
+				<td class="st_td_green"><div class="st_num">6</div><div class="st_symb">C</div><div class="st_weigth">12.011</div></td>
+				<td class="st_td_green"><div class="st_num">7</div><div class="st_symb">N</div><div class="st_weigth">14.007</div></td>
+				<td class="st_td_green"><div class="st_num">8</div><div class="st_symb">O</div><div class="st_weigth">15.999</div></td>
+				<td class="st_td_lgreen"><div class="st_num">9</div><div class="st_symb">F</div><div class="st_weigth">18.998</div></td>
+				<td class="st_td_purple"><div class="st_num">10</div><div class="st_symb">Ne</div><div class="st_weigth">20.180</div></td>
 			</tr>
 
 			<tr>
-				<td class="st_td_orange"><div class="st_num">11</div><div class="st_sym_two">Na</div><div class="st_weigth">22.990</div></td>
-				<td class="st_td_brown"><div class="st_num">12</div><div class="st_sym_two">Mg</div><div class="st_weigth">24.305</div></td>
+				<td class="st_td_orange"><div class="st_num">11</div><div class="st_symb">Na</div><div class="st_weigth">22.990</div></td>
+				<td class="st_td_brown"><div class="st_num">12</div><div class="st_symb">Mg</div><div class="st_weigth">24.305</div></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
@@ -96,96 +93,96 @@
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
-				<td class="st_td_blue"><div class="st_num">13</div><div class="st_sym_two">Al</div><div class="st_weigth">26.982</div></td>
-				<td class="st_td_lblue"><div class="st_num">14</div><div class="st_sym_two">Si</div><div class="st_weigth">28.086</div></td>
-				<td class="st_td_green"><div class="st_num">15</div><div class="st_sym_one">P</div><div class="st_weigth">30.974</div></td>
-				<td class="st_td_green"><div class="st_num">16</div><div class="st_sym_one">S</div><div class="st_weigth">32.065</div></td>
-				<td class="st_td_lgreen"><div class="st_num">17</div><div class="st_sym_two">Cl</div><div class="st_weigth">35.453</div></td>
-				<td class="st_td_purple"><div class="st_num">18</div><div class="st_sym_two">Ar</div><div class="st_weigth">39.948</div></td>
+				<td class="st_td_blue"><div class="st_num">13</div><div class="st_symb">Al</div><div class="st_weigth">26.982</div></td>
+				<td class="st_td_lblue"><div class="st_num">14</div><div class="st_symb">Si</div><div class="st_weigth">28.086</div></td>
+				<td class="st_td_green"><div class="st_num">15</div><div class="st_symb">P</div><div class="st_weigth">30.974</div></td>
+				<td class="st_td_green"><div class="st_num">16</div><div class="st_symb">S</div><div class="st_weigth">32.065</div></td>
+				<td class="st_td_lgreen"><div class="st_num">17</div><div class="st_symb">Cl</div><div class="st_weigth">35.453</div></td>
+				<td class="st_td_purple"><div class="st_num">18</div><div class="st_symb">Ar</div><div class="st_weigth">39.948</div></td>
 			</tr>
 
 			<tr>
-				<td class="st_td_orange"><div class="st_num">19</div><div class="st_sym_one">K</div><div class="st_weigth">39.098</div></td>
-				<td class="st_td_brown"><div class="st_num">20</div><div class="st_sym_two">Ca</div><div class="st_weigth">40.078</div></td>
-				<td class="st_td_pink"><div class="st_num">21</div><div class="st_sym_two">Sc</div><div class="st_weigth">44.956</div></td>
-				<td class="st_td_pink"><div class="st_num">22</div><div class="st_sym_two">Ti</div><div class="st_weigth">47.867</div></td>
-				<td class="st_td_pink"><div class="st_num">23</div><div class="st_sym_one">V</div><div class="st_weigth">50.942</div></td>
-				<td class="st_td_pink"><div class="st_num">24</div><div class="st_sym_two">Cr</div><div class="st_weigth">51.996</div></td>
-				<td class="st_td_pink"><div class="st_num">25</div><div class="st_sym_two">Mn</div><div class="st_weigth">54.938</div></td>
-				<td class="st_td_pink"><div class="st_num">26</div><div class="st_sym_two">Fe</div><div class="st_weigth">55.845</div></td>
-				<td class="st_td_pink"><div class="st_num">27</div><div class="st_sym_two">Co</div><div class="st_weigth">58.933</div></td>
-				<td class="st_td_pink"><div class="st_num">28</div><div class="st_sym_two">Ni</div><div class="st_weigth">58.693</div></td>
-				<td class="st_td_pink"><div class="st_num">29</div><div class="st_sym_two">Cu</div><div class="st_weigth">63.546</div></td>
-				<td class="st_td_pink"><div class="st_num">30</div><div class="st_sym_two">Zn</div><div class="st_weigth">65.39</div></td>
-				<td class="st_td_blue"><div class="st_num">31</div><div class="st_sym_two">Ga</div><div class="st_weigth">69.723</div></td>
-				<td class="st_td_lblue"><div class="st_num">32</div><div class="st_sym_two">Ge</div><div class="st_weigth">72.64</div></td>
-				<td class="st_td_lblue"><div class="st_num">33</div><div class="st_sym_two">As</div><div class="st_weigth">74.922</div></td>
-				<td class="st_td_green"><div class="st_num">34</div><div class="st_sym_two">Se</div><div class="st_weigth">78.96</div></td>
-				<td class="st_td_lgreen"><div class="st_num">35</div><div class="st_sym_two">Br</div><div class="st_weigth">79.904</div></td>
-				<td class="st_td_purple"><div class="st_num">36</div><div class="st_sym_two">Kr</div><div class="st_weigth">83.80</div></td>
+				<td class="st_td_orange"><div class="st_num">19</div><div class="st_symb">K</div><div class="st_weigth">39.098</div></td>
+				<td class="st_td_brown"><div class="st_num">20</div><div class="st_symb">Ca</div><div class="st_weigth">40.078</div></td>
+				<td class="st_td_pink"><div class="st_num">21</div><div class="st_symb">Sc</div><div class="st_weigth">44.956</div></td>
+				<td class="st_td_pink"><div class="st_num">22</div><div class="st_symb">Ti</div><div class="st_weigth">47.867</div></td>
+				<td class="st_td_pink"><div class="st_num">23</div><div class="st_symb">V</div><div class="st_weigth">50.942</div></td>
+				<td class="st_td_pink"><div class="st_num">24</div><div class="st_symb">Cr</div><div class="st_weigth">51.996</div></td>
+				<td class="st_td_pink"><div class="st_num">25</div><div class="st_symb">Mn</div><div class="st_weigth">54.938</div></td>
+				<td class="st_td_pink"><div class="st_num">26</div><div class="st_symb">Fe</div><div class="st_weigth">55.845</div></td>
+				<td class="st_td_pink"><div class="st_num">27</div><div class="st_symb">Co</div><div class="st_weigth">58.933</div></td>
+				<td class="st_td_pink"><div class="st_num">28</div><div class="st_symb">Ni</div><div class="st_weigth">58.693</div></td>
+				<td class="st_td_pink"><div class="st_num">29</div><div class="st_symb">Cu</div><div class="st_weigth">63.546</div></td>
+				<td class="st_td_pink"><div class="st_num">30</div><div class="st_symb">Zn</div><div class="st_weigth">65.39</div></td>
+				<td class="st_td_blue"><div class="st_num">31</div><div class="st_symb">Ga</div><div class="st_weigth">69.723</div></td>
+				<td class="st_td_lblue"><div class="st_num">32</div><div class="st_symb">Ge</div><div class="st_weigth">72.64</div></td>
+				<td class="st_td_lblue"><div class="st_num">33</div><div class="st_symb">As</div><div class="st_weigth">74.922</div></td>
+				<td class="st_td_green"><div class="st_num">34</div><div class="st_symb">Se</div><div class="st_weigth">78.96</div></td>
+				<td class="st_td_lgreen"><div class="st_num">35</div><div class="st_symb">Br</div><div class="st_weigth">79.904</div></td>
+				<td class="st_td_purple"><div class="st_num">36</div><div class="st_symb">Kr</div><div class="st_weigth">83.80</div></td>
 			</tr>
 
 			<tr>
-				<td class="st_td_orange"><div class="st_num">37</div><div class="st_sym_two">Rb</div><div class="st_weigth">85.468</div></td>
-				<td class="st_td_brown"><div class="st_num">38</div><div class="st_sym_two">Sr</div><div class="st_weigth">87.62</div></td>
-				<td class="st_td_pink"><div class="st_num">39</div><div class="st_sym_one">Y</div><div class="st_weigth">88.906</div></td>
-				<td class="st_td_pink"><div class="st_num">40</div><div class="st_sym_two">Zr</div><div class="st_weigth">91.224</div></td>
-				<td class="st_td_pink"><div class="st_num">41</div><div class="st_sym_two">Nb</div><div class="st_weigth">92.906</div></td>
-				<td class="st_td_pink"><div class="st_num">42</div><div class="st_sym_two">Mo</div><div class="st_weigth">95.94</div></td>
-				<td class="st_td_pink"><div class="st_num">43</div><div class="st_sym_two">Tc</div><div class="st_weigth">(98)</div></td>
-				<td class="st_td_pink"><div class="st_num">44</div><div class="st_sym_two">Ru</div><div class="st_weigth">101.07</div></td>
-				<td class="st_td_pink"><div class="st_num">45</div><div class="st_sym_two">Rh</div><div class="st_weigth">102.91</div></td>
-				<td class="st_td_pink"><div class="st_num">46</div><div class="st_sym_two">Pd</div><div class="st_weigth">106.42</div></td>
-				<td class="st_td_pink"><div class="st_num">47</div><div class="st_sym_two">Ag</div><div class="st_weigth">107.87</div></td>
-				<td class="st_td_pink"><div class="st_num">48</div><div class="st_sym_two">Cd</div><div class="st_weigth">112.41</div></td>
-				<td class="st_td_blue"><div class="st_num">49</div><div class="st_sym_two">In</div><div class="st_weigth">114.82</div></td>
-				<td class="st_td_blue"><div class="st_num">50</div><div class="st_sym_two">Sn</div><div class="st_weigth">118.71</div></td>
-				<td class="st_td_lblue"><div class="st_num">51</div><div class="st_sym_two">Sb</div><div class="st_weigth">121.76</div></td>
-				<td class="st_td_lblue"><div class="st_num">52</div><div class="st_sym_two">Te</div><div class="st_weigth">127.60</div></td>
-				<td class="st_td_lgreen"><div class="st_num">53</div><div class="st_sym_one">I</div><div class="st_weigth">126.90</div></td>
-				<td class="st_td_purple"><div class="st_num">54</div><div class="st_sym_two">Xe</div><div class="st_weigth">131.29</div></td>
+				<td class="st_td_orange"><div class="st_num">37</div><div class="st_symb">Rb</div><div class="st_weigth">85.468</div></td>
+				<td class="st_td_brown"><div class="st_num">38</div><div class="st_symb">Sr</div><div class="st_weigth">87.62</div></td>
+				<td class="st_td_pink"><div class="st_num">39</div><div class="st_symb">Y</div><div class="st_weigth">88.906</div></td>
+				<td class="st_td_pink"><div class="st_num">40</div><div class="st_symb">Zr</div><div class="st_weigth">91.224</div></td>
+				<td class="st_td_pink"><div class="st_num">41</div><div class="st_symb">Nb</div><div class="st_weigth">92.906</div></td>
+				<td class="st_td_pink"><div class="st_num">42</div><div class="st_symb">Mo</div><div class="st_weigth">95.94</div></td>
+				<td class="st_td_pink"><div class="st_num">43</div><div class="st_symb">Tc</div><div class="st_weigth">(98)</div></td>
+				<td class="st_td_pink"><div class="st_num">44</div><div class="st_symb">Ru</div><div class="st_weigth">101.07</div></td>
+				<td class="st_td_pink"><div class="st_num">45</div><div class="st_symb">Rh</div><div class="st_weigth">102.91</div></td>
+				<td class="st_td_pink"><div class="st_num">46</div><div class="st_symb">Pd</div><div class="st_weigth">106.42</div></td>
+				<td class="st_td_pink"><div class="st_num">47</div><div class="st_symb">Ag</div><div class="st_weigth">107.87</div></td>
+				<td class="st_td_pink"><div class="st_num">48</div><div class="st_symb">Cd</div><div class="st_weigth">112.41</div></td>
+				<td class="st_td_blue"><div class="st_num">49</div><div class="st_symb">In</div><div class="st_weigth">114.82</div></td>
+				<td class="st_td_blue"><div class="st_num">50</div><div class="st_symb">Sn</div><div class="st_weigth">118.71</div></td>
+				<td class="st_td_lblue"><div class="st_num">51</div><div class="st_symb">Sb</div><div class="st_weigth">121.76</div></td>
+				<td class="st_td_lblue"><div class="st_num">52</div><div class="st_symb">Te</div><div class="st_weigth">127.60</div></td>
+				<td class="st_td_lgreen"><div class="st_num">53</div><div class="st_symb">I</div><div class="st_weigth">126.90</div></td>
+				<td class="st_td_purple"><div class="st_num">54</div><div class="st_symb">Xe</div><div class="st_weigth">131.29</div></td>
 			</tr>
 
 			<tr>
-				<td class="st_td_orange"><div class="st_num">55</div><div class="st_sym_two">Cs</div><div class="st_weigth">132.91</div></td>
-				<td class="st_td_brown"><div class="st_num">56</div><div class="st_sym_two">Ba</div><div class="st_weigth">137.33</div></td>
-				<td class="st_td_amber"><div class="st_num">57-71</div><div class="st_sym_ext">La-Lu</div></td>
-				<td class="st_td_pink"><div class="st_num">72</div><div class="st_sym_two">Hf</div><div class="st_weigth">178.49</div></td>
-				<td class="st_td_pink"><div class="st_num">73</div><div class="st_sym_two">Ta</div><div class="st_weigth">180.95</div></td>
-				<td class="st_td_pink"><div class="st_num">74</div><div class="st_sym_one">W</div><div class="st_weigth">183.84</div></td>
-				<td class="st_td_pink"><div class="st_num">75</div><div class="st_sym_two">Re</div><div class="st_weigth">186.21</div></td>
-				<td class="st_td_pink"><div class="st_num">76</div><div class="st_sym_two">Os</div><div class="st_weigth">190.23</div></td>
-				<td class="st_td_pink"><div class="st_num">77</div><div class="st_sym_two">Ir</div><div class="st_weigth">192.22</div></td>
-				<td class="st_td_pink"><div class="st_num">78</div><div class="st_sym_two">Pt</div><div class="st_weigth">195.08</div></td>
-				<td class="st_td_pink"><div class="st_num">79</div><div class="st_sym_two">Au</div><div class="st_weigth">196.97</div></td>
-				<td class="st_td_pink"><div class="st_num">80</div><div class="st_sym_two">Hg</div><div class="st_weigth">200.59</div></td>
-				<td class="st_td_blue"><div class="st_num">81</div><div class="st_sym_two">Ti</div><div class="st_weigth">204.38</div></td>
-				<td class="st_td_blue"><div class="st_num">82</div><div class="st_sym_two">Pb</div><div class="st_weigth">207.2</div></td>
-				<td class="st_td_blue"><div class="st_num">83</div><div class="st_sym_two">Bi</div><div class="st_weigth">208.98</div></td>
-				<td class="st_td_lblue"><div class="st_num">84</div><div class="st_sym_two">Po</div><div class="st_weigth">(209)</div></td>
-				<td class="st_td_lgreen"><div class="st_num">85</div><div class="st_sym_two">At</div><div class="st_weigth">(210)</div></td>
-				<td class="st_td_purple"><div class="st_num">86</div><div class="st_sym_two">Rn</div><div class="st_weigth">(222)</div></td>
+				<td class="st_td_orange"><div class="st_num">55</div><div class="st_symb">Cs</div><div class="st_weigth">132.91</div></td>
+				<td class="st_td_brown"><div class="st_num">56</div><div class="st_symb">Ba</div><div class="st_weigth">137.33</div></td>
+				<td class="st_td_amber"><div class="st_symb">*</div></td>
+				<td class="st_td_pink"><div class="st_num">72</div><div class="st_symb">Hf</div><div class="st_weigth">178.49</div></td>
+				<td class="st_td_pink"><div class="st_num">73</div><div class="st_symb">Ta</div><div class="st_weigth">180.95</div></td>
+				<td class="st_td_pink"><div class="st_num">74</div><div class="st_symb">W</div><div class="st_weigth">183.84</div></td>
+				<td class="st_td_pink"><div class="st_num">75</div><div class="st_symb">Re</div><div class="st_weigth">186.21</div></td>
+				<td class="st_td_pink"><div class="st_num">76</div><div class="st_symb">Os</div><div class="st_weigth">190.23</div></td>
+				<td class="st_td_pink"><div class="st_num">77</div><div class="st_symb">Ir</div><div class="st_weigth">192.22</div></td>
+				<td class="st_td_pink"><div class="st_num">78</div><div class="st_symb">Pt</div><div class="st_weigth">195.08</div></td>
+				<td class="st_td_pink"><div class="st_num">79</div><div class="st_symb">Au</div><div class="st_weigth">196.97</div></td>
+				<td class="st_td_pink"><div class="st_num">80</div><div class="st_symb">Hg</div><div class="st_weigth">200.59</div></td>
+				<td class="st_td_blue"><div class="st_num">81</div><div class="st_symb">Tl</div><div class="st_weigth">204.38</div></td>
+				<td class="st_td_blue"><div class="st_num">82</div><div class="st_symb">Pb</div><div class="st_weigth">207.2</div></td>
+				<td class="st_td_blue"><div class="st_num">83</div><div class="st_symb">Bi</div><div class="st_weigth">208.98</div></td>
+				<td class="st_td_lblue"><div class="st_num">84</div><div class="st_symb">Po</div><div class="st_weigth">(209)</div></td>
+				<td class="st_td_lgreen"><div class="st_num">85</div><div class="st_symb">At</div><div class="st_weigth">(210)</div></td>
+				<td class="st_td_purple"><div class="st_num">86</div><div class="st_symb">Rn</div><div class="st_weigth">(222)</div></td>
 			</tr>
 
 			<tr>
-				<td class="st_td_orange"><div class="st_num">87</div><div class="st_sym_two">Fr</div><div class="st_weigth">(223)</div></td>
-				<td class="st_td_brown"><div class="st_num">88</div><div class="st_sym_two">Ra</div><div class="st_weigth">(226)</div></td>
-				<td class="st_td_red"><div class="st_num">89-103</div><div class="st_sym_ext">Ac-Lr</div></td>
-				<td class="st_td_pink"><div class="st_num">104</div><div class="st_sym_two">Rf</div><div class="st_weigth">(261)</div></td>
-				<td class="st_td_pink"><div class="st_num">105</div><div class="st_sym_two">Db</div><div class="st_weigth">(262)</div></td>
-				<td class="st_td_pink"><div class="st_num">106</div><div class="st_sym_two">Sg</div><div class="st_weigth">(266)</div></td>
-				<td class="st_td_pink"><div class="st_num">107</div><div class="st_sym_two">Bh</div><div class="st_weigth">(264)</div></td>
-				<td class="st_td_pink"><div class="st_num">108</div><div class="st_sym_two">Hs</div><div class="st_weigth">(277)</div></td>
-				<td class="st_td_pink"><div class="st_num">109</div><div class="st_sym_two">Mt</div><div class="st_weigth">(268)</div></td>
-				<td class="st_td_pink"><div class="st_num">110</div><div class="st_sym_two">Ds</div><div class="st_weigth">(272)</div></td>
-				<td class="st_td_pink"><div class="st_num">111</div><div class="st_sym_two">Rg</div><div class="st_weigth">(272)</div></td>
-				<td class="st_td_pink"><div class="st_num">112</div><div class="st_sym_two">Cn</div><div class="st_weigth">(277)</div></td>
-				<td class="st_td_grey"><div class="st_num">113</div><div class="st_sym_three">Uut</div><div class="st_weigth">(284)</div></td>
-				<td class="st_td_grey"><div class="st_num">114</div><div class="st_sym_two">Fi</div><div class="st_weigth">(289)</div></td>
-				<td class="st_td_grey"><div class="st_num">115</div><div class="st_sym_three">Uup</div><div class="st_weigth">(288)</div></td>
-				<td class="st_td_grey"><div class="st_num">116</div><div class="st_sym_two">Lv</div><div class="st_weigth">(292)</div></td>
-				<td class="st_td_grey"><div class="st_num">117</div><div class="st_sym_three">Uus</div><div class="st_weigth">(292)</div></td>
-				<td class="st_td_grey"><div class="st_num">118</div><div class="st_sym_three">Uuo</div><div class="st_weigth">(294)</div></td>
+				<td class="st_td_orange"><div class="st_num">87</div><div class="st_symb">Fr</div><div class="st_weigth">(223)</div></td>
+				<td class="st_td_brown"><div class="st_num">88</div><div class="st_symb">Ra</div><div class="st_weigth">(226)</div></td>
+				<td class="st_td_red"><div class="st_symb">**</div></td>
+				<td class="st_td_pink"><div class="st_num">104</div><div class="st_symb">Rf</div><div class="st_weigth">(261)</div></td>
+				<td class="st_td_pink"><div class="st_num">105</div><div class="st_symb">Db</div><div class="st_weigth">(262)</div></td>
+				<td class="st_td_pink"><div class="st_num">106</div><div class="st_symb">Sg</div><div class="st_weigth">(266)</div></td>
+				<td class="st_td_pink"><div class="st_num">107</div><div class="st_symb">Bh</div><div class="st_weigth">(264)</div></td>
+				<td class="st_td_pink"><div class="st_num">108</div><div class="st_symb">Hs</div><div class="st_weigth">(277)</div></td>
+				<td class="st_td_pink"><div class="st_num">109</div><div class="st_symb">Mt</div><div class="st_weigth">(268)</div></td>
+				<td class="st_td_pink"><div class="st_num">110</div><div class="st_symb">Ds</div><div class="st_weigth">(272)</div></td>
+				<td class="st_td_pink"><div class="st_num">111</div><div class="st_symb">Rg</div><div class="st_weigth">(272)</div></td>
+				<td class="st_td_pink"><div class="st_num">112</div><div class="st_symb">Cn</div><div class="st_weigth">(277)</div></td>
+				<td class="st_td_grey"><div class="st_num">113</div><div class="st_symb">Uut</div><div class="st_weigth">(284)</div></td>
+				<td class="st_td_grey"><div class="st_num">114</div><div class="st_symb">Fi</div><div class="st_weigth">(289)</div></td>
+				<td class="st_td_grey"><div class="st_num">115</div><div class="st_symb">Uup</div><div class="st_weigth">(288)</div></td>
+				<td class="st_td_grey"><div class="st_num">116</div><div class="st_symb">Lv</div><div class="st_weigth">(292)</div></td>
+				<td class="st_td_grey"><div class="st_num">117</div><div class="st_symb">Uus</div><div class="st_weigth">(292)</div></td>
+				<td class="st_td_grey"><div class="st_num">118</div><div class="st_symb">Uuo</div><div class="st_weigth">(294)</div></td>
 			</tr>
 
 			<tr></tr>
@@ -194,42 +191,42 @@
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
-				<td class="st_td_amber"><div class="st_num">57</div><div class="st_sym_two">La</div><div class="st_weigth">138.91</div></td>
-				<td class="st_td_amber"><div class="st_num">58</div><div class="st_sym_two">Ce</div><div class="st_weigth">140.12</div></td>
-				<td class="st_td_amber"><div class="st_num">59</div><div class="st_sym_two">Pr</div><div class="st_weigth">140.91</div></td>
-				<td class="st_td_amber"><div class="st_num">60</div><div class="st_sym_two">Nd</div><div class="st_weigth">144.24</div></td>
-				<td class="st_td_amber"><div class="st_num">61</div><div class="st_sym_two">Pm</div><div class="st_weigth">(145)</div></td>
-				<td class="st_td_amber"><div class="st_num">62</div><div class="st_sym_two">Sm</div><div class="st_weigth">150.36</div></td>
-				<td class="st_td_amber"><div class="st_num">63</div><div class="st_sym_two">Eu</div><div class="st_weigth">151.96</div></td>
-				<td class="st_td_amber"><div class="st_num">64</div><div class="st_sym_two">Gd</div><div class="st_weigth">157.25</div></td>
-				<td class="st_td_amber"><div class="st_num">65</div><div class="st_sym_two">Tb</div><div class="st_weigth">158.93</div></td>
-				<td class="st_td_amber"><div class="st_num">66</div><div class="st_sym_two">Dy</div><div class="st_weigth">162.50</div></td>
-				<td class="st_td_amber"><div class="st_num">67</div><div class="st_sym_two">Ho</div><div class="st_weigth">164.93</div></td>
-				<td class="st_td_amber"><div class="st_num">68</div><div class="st_sym_two">Er</div><div class="st_weigth">167.26</div></td>
-				<td class="st_td_amber"><div class="st_num">69</div><div class="st_sym_two">Tm</div><div class="st_weigth">168.93</div></td>
-				<td class="st_td_amber"><div class="st_num">70</div><div class="st_sym_two">Yb</div><div class="st_weigth">173.04</div></td>
-				<td class="st_td_amber"><div class="st_num">71</div><div class="st_sym_two">Lu</div><div class="st_weigth">174.97</div></td>
+				<td class="st_td_amber"><div class="st_num">57</div><div class="st_symb">La</div><div class="st_weigth">138.91</div></td>
+				<td class="st_td_amber"><div class="st_num">58</div><div class="st_symb">Ce</div><div class="st_weigth">140.12</div></td>
+				<td class="st_td_amber"><div class="st_num">59</div><div class="st_symb">Pr</div><div class="st_weigth">140.91</div></td>
+				<td class="st_td_amber"><div class="st_num">60</div><div class="st_symb">Nd</div><div class="st_weigth">144.24</div></td>
+				<td class="st_td_amber"><div class="st_num">61</div><div class="st_symb">Pm</div><div class="st_weigth">(145)</div></td>
+				<td class="st_td_amber"><div class="st_num">62</div><div class="st_symb">Sm</div><div class="st_weigth">150.36</div></td>
+				<td class="st_td_amber"><div class="st_num">63</div><div class="st_symb">Eu</div><div class="st_weigth">151.96</div></td>
+				<td class="st_td_amber"><div class="st_num">64</div><div class="st_symb">Gd</div><div class="st_weigth">157.25</div></td>
+				<td class="st_td_amber"><div class="st_num">65</div><div class="st_symb">Tb</div><div class="st_weigth">158.93</div></td>
+				<td class="st_td_amber"><div class="st_num">66</div><div class="st_symb">Dy</div><div class="st_weigth">162.50</div></td>
+				<td class="st_td_amber"><div class="st_num">67</div><div class="st_symb">Ho</div><div class="st_weigth">164.93</div></td>
+				<td class="st_td_amber"><div class="st_num">68</div><div class="st_symb">Er</div><div class="st_weigth">167.26</div></td>
+				<td class="st_td_amber"><div class="st_num">69</div><div class="st_symb">Tm</div><div class="st_weigth">168.93</div></td>
+				<td class="st_td_amber"><div class="st_num">70</div><div class="st_symb">Yb</div><div class="st_weigth">173.04</div></td>
+				<td class="st_td_amber"><div class="st_num">71</div><div class="st_symb">Lu</div><div class="st_weigth">174.97</div></td>
 			</tr>
 
 			<tr>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
 				<td class="st_none"></td>
-				<td class="st_td_red"><div class="st_num">89</div><div class="st_sym_two">Ac</div><div class="st_weigth">(227)</div></td>
-				<td class="st_td_red"><div class="st_num">90</div><div class="st_sym_two">Th</div><div class="st_weigth">232.04</div></td>
-				<td class="st_td_red"><div class="st_num">91</div><div class="st_sym_two">Pa</div><div class="st_weigth">231.04</div></td>
-				<td class="st_td_red"><div class="st_num">92</div><div class="st_sym_one">U</div><div class="st_weigth">238.03</div></td>
-				<td class="st_td_red"><div class="st_num">93</div><div class="st_sym_two">Np</div><div class="st_weigth">(237)</div></td>
-				<td class="st_td_red"><div class="st_num">94</div><div class="st_sym_two">Pu</div><div class="st_weigth">(244)</div></td>
-				<td class="st_td_red"><div class="st_num">95</div><div class="st_sym_two">Am</div><div class="st_weigth">(243)</div></td>
-				<td class="st_td_red"><div class="st_num">96</div><div class="st_sym_two">Cm</div><div class="st_weigth">(247)</div></td>
-				<td class="st_td_red"><div class="st_num">97</div><div class="st_sym_two">Bk</div><div class="st_weigth">(247)</div></td>
-				<td class="st_td_red"><div class="st_num">98</div><div class="st_sym_two">Cf</div><div class="st_weigth">(251)</div></td>
-				<td class="st_td_red"><div class="st_num">99</div><div class="st_sym_two">Es</div><div class="st_weigth">(252)</div></td>
-				<td class="st_td_red"><div class="st_num">100</div><div class="st_sym_two">Fm</div><div class="st_weigth">(257)</div></td>
-				<td class="st_td_red"><div class="st_num">101</div><div class="st_sym_two">Md</div><div class="st_weigth">(258)</div></td>
-				<td class="st_td_red"><div class="st_num">102</div><div class="st_sym_two">No</div><div class="st_weigth">(259)</div></td>
-				<td class="st_td_red"><div class="st_num">102</div><div class="st_sym_two">Lr</div><div class="st_weigth">(262)</div></td>
+				<td class="st_td_red"><div class="st_num">89</div><div class="st_symb">Ac</div><div class="st_weigth">(227)</div></td>
+				<td class="st_td_red"><div class="st_num">90</div><div class="st_symb">Th</div><div class="st_weigth">232.04</div></td>
+				<td class="st_td_red"><div class="st_num">91</div><div class="st_symb">Pa</div><div class="st_weigth">231.04</div></td>
+				<td class="st_td_red"><div class="st_num">92</div><div class="st_symb">U</div><div class="st_weigth">238.03</div></td>
+				<td class="st_td_red"><div class="st_num">93</div><div class="st_symb">Np</div><div class="st_weigth">(237)</div></td>
+				<td class="st_td_red"><div class="st_num">94</div><div class="st_symb">Pu</div><div class="st_weigth">(244)</div></td>
+				<td class="st_td_red"><div class="st_num">95</div><div class="st_symb">Am</div><div class="st_weigth">(243)</div></td>
+				<td class="st_td_red"><div class="st_num">96</div><div class="st_symb">Cm</div><div class="st_weigth">(247)</div></td>
+				<td class="st_td_red"><div class="st_num">97</div><div class="st_symb">Bk</div><div class="st_weigth">(247)</div></td>
+				<td class="st_td_red"><div class="st_num">98</div><div class="st_symb">Cf</div><div class="st_weigth">(251)</div></td>
+				<td class="st_td_red"><div class="st_num">99</div><div class="st_symb">Es</div><div class="st_weigth">(252)</div></td>
+				<td class="st_td_red"><div class="st_num">100</div><div class="st_symb">Fm</div><div class="st_weigth">(257)</div></td>
+				<td class="st_td_red"><div class="st_num">101</div><div class="st_symb">Md</div><div class="st_weigth">(258)</div></td>
+				<td class="st_td_red"><div class="st_num">102</div><div class="st_symb">No</div><div class="st_weigth">(259)</div></td>
+				<td class="st_td_red"><div class="st_num">102</div><div class="st_symb">Lr</div><div class="st_weigth">(262)</div></td>
 			</tr>
 		</table>
 	</body>

@@ -1,25 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   doft.css                                           :+:      :+:    :+:   */
+/*   scumm.css                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbouder <tbouder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/08 21:38:36 by tbouder           #+#    #+#             */
-/*   Updated: 2016/06/13 16:19:05 by tbouder          ###   ########.fr       */
+/*   Updated: 2016/06/13 15:52:26 by tbouder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 body {background-color: #505050;}
+.grayscale{-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+input[type=checkbox] { display: none;}
+input[id=moves] ~ .moves {display: none;}
+input[id=moves]:checked ~ .moves {display: block;}
+input[id=take] ~ .take {display: none;}
+input[id=take]:checked ~ .take {display: block;}
+	input[id=take_chair] ~ .take_chair {display: none;}
+	input[id=take_chair]:checked ~ .take_chair {display: block;}
+input[id=watch] ~ .watch {display: none;}
+input[id=watch]:checked ~ .watch {display: block;}
+input[id=use] ~ .use {display: none;}
+input[id=use]:checked ~ .use {display: block;}
+	input[id=use_chair] ~ .use_chair {display: none;}
+	input[id=use_chair]:checked ~ .use_chair {display: block;}
+input[id=blabla] ~ .blabla {display: none;}
+input[id=blabla]:checked ~ .blabla {display: block;}
 
 /*
 ** Header
 */
-.st_head {position: absolute; left: 233px; background-color: #909090; border-radius: 10px; box-shadow: 10px 10px 10px black; width: 1420px; height: 137px; margin: 15px auto;}
-.st_img_dot42{position: absolute; top: 10px; left: 1%;}
-.st_img_glass{position: absolute; right: 27px; top: 10px;}
-.st_img_reload{position: absolute; right: 10px; top: 10px;}
-.st_img_close{position: absolute; right: 10px; bottom: 10px;}
+.st_head{position: absolute; left: 233px; background-color: #909090; border-radius: 10px; box-shadow: 10px 10px 10px black; width: 1420px; height: 137px; margin: 15px auto;}
+.st_img_dot42 {position: absolute; top: 10px; left: 1%;}
+.st_img_glass {position: absolute; right: 27px; top: 10px;}
+.st_img_reload {position: absolute; right: 10px; top: 10px;}
+.st_img_close {position: absolute; right: 10px; bottom: 10px;}
 
 /*
 ** Dashboard (grid)
@@ -40,13 +56,19 @@ body {background-color: #505050;}
 .st_imgs_chat {height: 70px; margin-left: 30.5px; margin-top: 10px;}
 .st_img_book {height: 97px; margin-left: 30.5px; margin-top: 14px;}
 .st_img_towel {width: 70px; margin-left: 30.5px; margin-top: 14px;}
+
 .st_brik {width: 120px; height: 70px; margin-left: 9px; margin-top: 5px; background-image: url("resources/brick.jpg");}
 
 /*
 ** Center
 */
-.st_ikea {position: absolute; margin-top: -237px; margin-left: 320px; /*background-color: rgba(105, 20, 50, 0.2);*/ height: 220px; width: 140px; z-index: 3;}
-.st_apple {position: absolute; margin-top: -250px; margin-left: 784px; /*background-color: rgba(10, 10, 150, 0.2);*/ height: 165px; width: 190px; z-index: 3;}
+.st_chair{position: absolute; margin-top: -237px; margin-left: 320px; /*background-color: rgba(105, 20, 50, 0.2);*/ height: 220px; width: 140px; z-index: 3;}
+.st_apple{position: absolute; margin-top: -250px; margin-left: 784px; /*background-color: rgba(10, 10, 150, 0.2);*/ height: 165px; width: 190px; z-index: 3;}
+.st_screen{position: absolute; margin-top: -265px; margin-left: 630px; /*background-color: rgba(20, 250, 150, 0.2);*/ height: 100px; width: 125px;}
+.st_broken{position: absolute; margin-top: -90px; margin-left: -400px; /*background-color: rgba(20, 250, 150, 0.2);*/ height: 100px; width: 125px; z-index: 4;}
+.st_girl{position: absolute; margin-top: -330px; margin-left: 10px; /*background-color: rgba(250, 20, 150, 0.2);*/ height: 230px; width: 80px;}
+.st_strange{position: absolute; margin-top: -330px; margin-left: 120px; /*background-color: rgba(20, 20, 250, 0.2);*/ height: 150px; width: 150px;}
+
 
 /*
 ** Dialogue zone
@@ -57,3 +79,9 @@ body {background-color: #505050;}
 .st_txt_02 {font-style: italic; line-height: 20px;}
 .st_box {margin-top: 3px; margin-left: 14px;}
 .st_ordi {text-shadow: 5px 5px 4px #CF5C08;}
+
+/*
+** Inventory
+*/
+
+.st_inventory {height: 97px;margin-left: 40px;margin-top: 50px;}
