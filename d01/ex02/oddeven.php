@@ -1,10 +1,19 @@
 #!/usr/bin/php
 <?php
+	function	ft_strlen($str)
+	{
+		$i = 0;
+
+		while ($str[$i])
+			$i++;
+		return ($i);
+	}
+
 	while (TRUE)
 	{
 		echo "Entrez un nombre: ";
 		$line = fgets(STDIN);
-		if (!isset($line[0]))
+		if (is_null($line[0]))
 		{
 			echo "\n";
 			break;
@@ -14,7 +23,7 @@
 			$number = str_replace(array("\n", "\r"), '', $line);
 			if (is_numeric($number) == TRUE)
 			{
-				if ($number[strlen($number) - 1] % 2 == 0)
+				if ($number[ft_strlen($number) - 1] % 2 == 0)
 					echo "Le chiffre ".$number." est Pair\n";
 				else
 					echo "Le chiffre ".$number." est Impair\n";

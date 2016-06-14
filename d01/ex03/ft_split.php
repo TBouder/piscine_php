@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 	function	ft_transform_space($str)
 	{
@@ -14,10 +13,13 @@
 	}
 	function	ft_split($str)
 	{
-		$str = ft_transform_space($str);
-		$arr = explode(' ', $str);
-		sort($arr);
-		$arr = array_filter($arr, "ft_valid_str");
-		print_r(array_slice($arr, 0));
+		if (!is_array($str))
+		{
+			$str = ft_transform_space($str);
+			$arr = explode(' ', $str);
+			sort($arr);
+			$arr = array_filter($arr, "ft_valid_str");
+			print_r(array_slice($arr, 0));
+		}
 	}
 ?>
