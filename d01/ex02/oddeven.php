@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-	while (1)
+	while (TRUE)
 	{
 		echo "Entrez un nombre: ";
 		$line = fgets(STDIN);
@@ -9,17 +9,18 @@
 			echo "\n";
 			break;
 		}
-		$line = str_replace(array("\n", "\r"), '', $line);
-		if (is_numeric($line) == 0)
-		{
-			echo "'".$line."'"." n'est pas un chiffre\n";
-		}
 		else
 		{
-			if ($line % 2 == 0)
-				echo "Le chiffre ".$line." est Pair\n";
+			$number = str_replace(array("\n", "\r"), '', $line);
+			if (is_numeric($number) == TRUE)
+			{
+				if ($number[strlen($number) - 1] % 2 == 0)
+					echo "Le chiffre ".$number." est Pair\n";
+				else
+					echo "Le chiffre ".$number." est Impair\n";
+			}
 			else
-				echo "Le chiffre ".$line." est Impair\n";
+				echo "'".$number."' n'est pas un chiffre\n";
 		}
 	}
 ?>

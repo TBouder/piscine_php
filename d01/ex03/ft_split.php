@@ -1,58 +1,23 @@
+#!/usr/bin/php
 <?php
-	function	ft_is_space($c)
+	function	ft_transform_space($str)
 	{
-		if (ord($c) <= 32 || ord($c) > 8191 && ord($c) < 8208 || ord($c) > 8231
-			&& ord($c) < 8240)
-			return (TRUE);
-		return (FALSE);
+		$str = str_replace(array(chr(9), chr(10), chr(11), chr(12), chr(13),
+		chr(133), chr(160), chr(5760), chr(8192), chr(8193), chr(8194),
+		chr(8195), chr(8196), chr(8197), chr(8198), chr(8199), chr(8200),
+		chr(8201), chr(8202), chr(8232)), ' ', $str);
+		return ($str);
 	}
-
-	function	ft_count_words($str)
+	function ft_valid_str($value)
 	{
-		$i = 0;
-		$words = 0;
-
-		while (($str[$i] || $str[$i] == '0'))
-		{
-			while (ft_is_space($str[$i])) //or ctype_space
-				$i++;
-			if (($str[$i] || $str[$i] == '0'))
-			{
-				$words++;
-				while (($str[$i] || $str[$i] == '0') && !ft_is_space($str[$i]))
-				{
-					$i++;
-				}
-			}
-			$i++;
-		}
-		return ($words);
+	  return ($value || is_numeric($value));
 	}
-
 	function	ft_split($str)
 	{
-		$i = 0;
-		$word = 0;
-		$total_words = ft_count_words($str);
-
-		echo "Array\n{\n";
-		if ($total_words != 0)
-		{
-			while (($str[$i] || $str[$i] == '0') && $word != $total_words)
-			{
-				echo "\t[" . $word . "] => ";
-				while (ft_is_space($str[$i]))
-					$i++;
-				while (($str[$i] || $str[$i] == '0') && !ft_is_space($str[$i]))
-				{
-					echo $str[$i];
-					$i++;
-				}
-				echo "\n";
-				$i++;
-				$word++;
-			}
-		}
-		echo "}\n";
+		$str = ft_transform_space($str);
+		$arr = explode(' ', $str);
+		sort($arr);
+		$arr = array_filter($arr, "ft_valid_str");
+		print_r(array_slice($arr, 0));
 	}
 ?>
