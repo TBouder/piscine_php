@@ -52,9 +52,9 @@
 		$others_nb = array();
 		$others = array();
 
-		while ($arr[$i])
+		while (ft_valid_str($arr[$i]))
 		{
-			if (ft_is_char($arr[$i]) == TRUE)
+			if (ft_is_char($arr[$i]) == TRUE && !is_numeric($arr[$i]))
 				array_push($chars, $arr[$i]);
 			if (ft_is_char($arr[$i]) == FALSE && ft_is_char($arr[$i][0]) == TRUE && ft_contain_nb($arr[$i]) == TRUE)
 				array_push($nb_chars, $arr[$i]);
@@ -71,7 +71,7 @@
 		sort($chars, SORT_FLAG_CASE | SORT_NATURAL);
 		sort($nb_chars, SORT_FLAG_CASE | SORT_NATURAL);
 		sort($others_chars, SORT_FLAG_CASE | SORT_NATURAL);
-		sort($numbers, SORT_FLAG_CASE | SORT_NATURAL);
+		sort($numbers, SORT_STRING);
 		sort($others_nb, SORT_FLAG_CASE | SORT_NATURAL);
 		sort($others, SORT_FLAG_CASE | SORT_NATURAL);
 		$arr = array_merge($chars, $nb_chars, $others_chars, $numbers, $others_nb, $others);
@@ -90,6 +90,6 @@
 	$to_sort = array_filter($to_sort, "ft_valid_str");
 	$to_sort = ft_custom_sort($to_sort);
 	$str = implode($to_sort, "\n");
-	if ($str)
+	if (ft_valid_str($str))
 		echo $str."\n";
 ?>

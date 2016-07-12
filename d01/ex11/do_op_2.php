@@ -8,7 +8,10 @@
 	{
 		$str = explode(" ", $arg);
 		$str = array_filter($str, "ft_valid_str");
-		$str = implode($str);
+		if (ft_array_len($str) <= 3)
+			$str = implode($str);
+		else
+			$str = FALSE;
 		return ($str);
 	}
 	function	ft_array_len($arr)

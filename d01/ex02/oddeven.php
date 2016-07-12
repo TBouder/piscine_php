@@ -1,10 +1,15 @@
 #!/usr/bin/php
 <?php
+	function	ft_valid_str($value)
+	{
+	  return ($value || is_numeric($value));
+	}
+
 	function	ft_strlen($str)
 	{
 		$i = 0;
 
-		while ($str[$i])
+		while (ft_valid_str($str[$i]))
 			$i++;
 		return ($i);
 	}

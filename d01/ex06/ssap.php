@@ -4,6 +4,7 @@
 	{
 	  return ($value || is_numeric($value));
 	}
+
 	$i = 1;
 	while (ft_valid_str($argv[$i]))
 	{
@@ -16,6 +17,6 @@
 	sort($to_sort);
 	$to_sort = array_filter($to_sort, "ft_valid_str");
 	$str = implode($to_sort, "\n");
-	if ($str)
+	if (ft_valid_str($str))
 		echo $str."\n";
 ?>
